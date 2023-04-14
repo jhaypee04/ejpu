@@ -7,7 +7,15 @@
     <title>EJPU</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
- 
+    <style>
+      .offcanvas-i a{
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .offcanvas-i li{
+        list-style-type: none;
+      }
+    </style>
 </head>
 <body>
   <div class="">
@@ -17,7 +25,7 @@
           <a class="navbar-brand" href="#">
             <img src="logo3.PNG" alt="" style="width: 50px;height:50px;">
           </a>
-          <button class="btn btn-primary navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"  aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <button class="btn  navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"  aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -25,7 +33,17 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-           Nav items
+           <ul class="offcanvas-i">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#testimonials">Testimonials</a>
+            </li>
+           </ul>
         </div>
     </div>
         </div>
@@ -34,19 +52,21 @@
     <div class="col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
-          <img src="https://media.licdn.com/dms/image/C4E03AQFqaXD6O4vKPQ/profile-displayphoto-shrink_800_800/0/1656780479043?e=1686787200&v=beta&t=HSprcRJiO2-sgzSXEpKMCsL26KIKu_CVGKGrpCi11GA" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          <img src="https://media.licdn.com/dms/image/C4E03AQFqaXD6O4vKPQ/profile-displayphoto-shrink_800_800/0/1656780479043?e=1686787200&v=beta&t=HSprcRJiO2-sgzSXEpKMCsL26KIKu_CVGKGrpCi11GA" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy" style="border-radius: 8px;">
         </div>
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
-          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">EDOZIE JOHNPAUL UZOMA</h1>
+          <p class="lead">I am a Designer and Developer.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+            <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
           </div>
         </div>
       </div>
     </div>
     <!-- About me -->
+    <div class="m-4">
+    <h2 class="pb-2 mb-4 border-bottom" id="about">About me</h2>
     <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Skills</button>
@@ -69,26 +89,29 @@
             Tab Content 3
         </div>
       </div>
+    </div>
+    
       <!-- Services -->
-      <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">Custom cards</h2>
+      <div class=" px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom" id="services">Services offered</h2>
     
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
           <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://i.guim.co.uk/img/media/63de40b99577af9b867a9c57555a432632ba760b/0_266_5616_3370/master/5616.jpg?width=620&quality=85&dpr=1&s=none');">
+            <div class=" card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://i.guim.co.uk/img/media/63de40b99577af9b867a9c57555a432632ba760b/0_266_5616_3370/master/5616.jpg?width=620&quality=85&dpr=1&s=none');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-dark">Web Design</h3>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                    <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
+                    HTML + CSS + JavaScript
                   </li>
                   <li class="d-flex align-items-center me-3">
                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                    <small>Earth</small>
+                    <small class="">Bootstrap</small>
                   </li>
                   <li class="d-flex align-items-center">
                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                    <small>3d</small>
+                    <small>React</small>
                   </li>
                 </ul>
               </div>
@@ -96,20 +119,20 @@
           </div>
     
           <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+            <div class=" card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://images.pexels.com/photos/445109/pexels-photo-445109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Mobile App Development</h3>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                    <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
                   </li>
                   <li class="d-flex align-items-center me-3">
                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                    <small>Pakistan</small>
+                    <small>Flutter & Dart</small>
                   </li>
                   <li class="d-flex align-items-center">
                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                    <small>4d</small>
+                    <small>React Native</small>
                   </li>
                 </ul>
               </div>
@@ -117,20 +140,20 @@
           </div>
     
           <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/15951/production/_117310488_16.jpg.webp');">
+            <div class="card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('https://ichef.bbci.co.uk/news/976/cpsprodpb/15951/production/_117310488_16.jpg.webp');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-dark">Programming Instructor</h3>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                    <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
                   </li>
                   <li class="d-flex align-items-center me-3">
                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                    <small>California</small>
+                    <small>Website Design Tutor</small>
                   </li>
                   <li class="d-flex align-items-center">
                     <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                    <small>5d</small>
+                    <small>Mobile App Tutor</small>
                   </li>
                 </ul>
               </div>
@@ -139,7 +162,8 @@
         </div>
       </div>
       <!-- Testimonials -->
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleAutoplaying" class=" px-4 py-1 carousel slide" data-bs-ride="carousel">
+        <h2 class="pb-2 mb-4 border-bottom" id="testimonials">Testimonials</h2>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="https://scontent-los2-1.xx.fbcdn.net/v/t39.30808-6/336351334_580907683811168_3468530575334158435_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=0debeb&_nc_ohc=lNcEQ4Y9Yw0AX86qMYW&_nc_ht=scontent-los2-1.xx&oh=00_AfBnlPIEaZcLBLgYomBoR4u_MzrWk1rOZno9HRBVo0C3cw&oe=643B7AA7" class="d-block w-100" alt="...">
@@ -158,12 +182,12 @@
         </button>
       </div>
 
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 px-4 me-3 border-top" >
         <div class="col-md-4 d-flex align-items-center">
           <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
             <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
           </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 Company, Inc</span>
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 EJPU Brand</span>
         </div>
     
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
